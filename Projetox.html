@@ -1,0 +1,476 @@
+<!DOCTYPE html> 
+
+<html id="paged" lang="pt-br">
+
+<head>
+    <title>PureFlix</title>
+    <meta charset="utf-8">
+    <link rel="shortcut ico" href="Leitor1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="Pesquisa.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+    <body>
+        <header class="container_header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <img src="Logo1.png" width="50px" height="50px">
+                    <ul id="items_nav" class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a id="id" class="nav-link active" aria-current="page" href="#">Lançamentos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">em destaque</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">avaliações</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">entrevistas e makingof</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">novidades</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input id="txtPesquisa" class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search">
+                      <button id="botaoPesquisa" class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+ 
+
+        <div class="container_main1">
+            <h1 id="lancamentos">Lançamentos</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" class="container">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+
+                    <!--ITEM 1 DO CARROSEL-->
+
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-8" class="d-block w-100" width="900" height="600" src="https://www.youtube.com/embed/zQEjE_M2Esw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="col-xs-12 cols-sm-12 col-md-12 col-lg-4">
+                                <h1>Sonic: O filme</h1>
+                                <p><b>Sinopse: </b> o porco-espinho azul mais famoso do mundo, se junta com os seus amigos para derrotar o terrível Doutor Eggman, um cientista louco que planeja dominar o mundo, e o Doutor Robotnik, responsável por aprisionar animais inocentes em robôs. </p>
+                                <!--Dados do filme-->
+
+                                <!--Equipe Técnica-->
+                                <div class="row" class="diretor">
+                                    <div style="font-size: 15px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                        <b>Diretor:</b> Jeff Fowler
+                                        <b style="padding-left: 5px;">Roteiro:</b> Josh Miller
+                                        <b style="padding-left: 5px;">Estreia:</b> 2020
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!--Elenco-->
+                                <p style="font-size: 15px;"><b>Elenco:</b></p>
+
+                                <div class="row" class="Elenco">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p style="font-size: 15px;">Ben Schowards | James Marsden | Jim Carrey | Adam Pally</p>
+                                    </div>
+                                </div>
+
+                                <!--Avaliação-->
+                                <p><b>Avaliação</b></p>
+                                <img id="rating_image" src="rating.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--ITEM 2 CORROSSEL-->
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-8" class="d-block w-100" width="900" height="600" src="https://www.youtube.com/embed/D5hnYW5lBuw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="col-xs-12 cols-sm-12 col-md-12 col-lg-4">
+                                <h1>Doutor Estranho e O Multiverso da Loucura</h1>
+                                <p>Após os eventos de "Homem-Aranha: Sem Volta Para Casa" e da primeira temporada de "Loki", o Dr. Stephen Strange, com a ajuda de antigos e novos aliados místicos, viaja pelo Multiverso para enfrentar um novo e misterioso adversário. </p>
+                                <!--Dados do filme-->
+
+                                <!--Equipe Técnica-->
+                                <div class="row" class="diretor">
+                                    <div style="font-size: 15px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                        <b>Diretor:</b> Sam Raimi
+                                        <b style="padding-left: 5px;">Roteiro:</b> Stan Lee
+                                        <b style="padding-left: 5px;">Estreia:</b> 2022
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!--Elenco-->
+                                <p style="font-size: 15px;"><b>Elenco:</b></p>
+
+                                <div class="row" class="Elenco">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p style="font-size: 15px;"> Benedict Cumberbatch | Benedict Wong | Jett Klayne | Elizabeth Olsen</p>
+                                    </div>
+                                </div>
+
+                                <!--Avaliação-->
+                                <p><b>Avaliação</b></p>
+                                <img id="rating_image" src="rating.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--ITEM 3 DO CARROSSEL-->
+                    <div class="carousel-item">
+                       <div class="row">
+                        <iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-8" class="d-block w-100" width="900" height="600" src="https://www.youtube.com/embed/waTob1IM4UM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="col-xs-12 cols-sm-12 col-md-12 col-lg-4">
+                                <h1>Thor Love and Thumder</h1>
+                                <p>O filme encontra Thor (Chris Hemsworth) em uma jornada diferente de tudo que ele já enfrentou – uma busca pela paz interior, mas sua aposentadoria é interrompida por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses (Christian Bale), que busca a extinção dos deuses. Para combater a ameaça, Thor pede a ajuda do Rei Valquíria (Tessa Thompson), Korg (Taika Waititi) e da ex-namorada Jane Foster (Natalie Portman), que – para surpresa de Thor – inexplicavelmente empunha seu martelo mágico, Mjolnir, revelando-se a Poderosa Thor. Juntos, eles embarcam em uma angustiante aventura cósmica para descobrir o mistério da vingança do Carniceiro dos Deuses e detê-lo antes que seja tarde demais.</p>
+                                <!--Dados do filme-->
+
+                                <!--Equipe Técnica-->
+                                <div class="row" class="diretor">
+                                    <div style="font-size: 15px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                        <b>Diretor:</b> Taika Waititi
+                                        <b style="padding-left: 5px;">Roteiro:</b> Taika Waititi
+                                        <b style="padding-left: 5px;">Estreia:</b> 2022
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!--Elenco-->
+                                <p style="font-size: 15px;"><b>Elenco:</b></p>
+
+                                <div class="row" class="Elenco">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p style="font-size: 15px;"> Bel Falcone | Dave Bautista | Cris Pratt | Tessa Thompson </p>
+                                    </div>
+                                </div>
+
+                                <!--Avaliação-->
+                                <p><b>Avaliação</b></p>
+                                <img id="rating_image" src="rating.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--ITEM 4 DO CARROSSEL-->
+
+                    <div class="carousel-item">
+                        <div class="row">
+                         <iframe class="col-xs-12 col-sm-12 col-md-12 col-lg-8" class="d-block w-100" width="900" height="600" src="https://www.youtube.com/embed/DbBe5U8m_KU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="col-xs-12 cols-sm-12 col-md-12 col-lg-4">
+                                <h1>Lightyear</h1>
+                                <p>Chris Evans emprestará sua voz ao jovem Buzz Lightyear no filme solo do personagem, narrando seus primeiros passos como piloto de testes até chegar no ranger do espaço como o conhecemos hoje.</p>
+                                <!--Dados do filme-->
+
+                                <!--Equipe Técnica-->
+                                <div class="row" class="diretor">
+                                    <div style="font-size: 15px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>
+                                        <b>Diretor:</b> Angus MacLane
+                                        <b style="padding-left: 5px;">Roteiro:</b> Peter Docter
+                                        <b style="padding-left: 5px;">Estreia:</b> 2022
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!--Elenco-->
+                                <p style="font-size: 15px;"><b>Elenco:</b></p>
+
+                                <div class="row" class="Elenco">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p style="font-size: 15px;"> Keke Palmer | Keke Palmer | Dale Soules | Angus MacLane</p>
+                                    </div>
+                                </div>
+
+                                <!--Avaliação-->
+                                <p><b>Avaliação</b></p>
+                                <img id="rating_image" src="rating.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FILMES POPULARES-->   
+        <div class="row">
+            <div class="col-12">
+                <div id="tela" >
+                    <h2 id="bxb">Carregando...</h2>
+                </div>
+            </div> 
+        </div>
+
+        <!--EM DESTAQUE -->
+
+        <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+            <div class="row">
+                <div class="col-6">
+                    <h2 style="padding-bottom: 20px";><b>Em destaque</b></h2>
+                </div>
+                <div class="col-6">
+                    <div class="dropdown" style="text-align: right;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoria: TODOS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Aventura</a></li>
+                            <li><a class="dropdown-item" href="#">Romance</a></li>
+                            <li><a class="dropdown-item" href="#">Comédia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Banners dos filmes em destaque-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="padding-bottom: 20px;">
+                    <div class="card" widht="100%">
+                        <img id="banner" src="rogue one banner.jpg" class="card-img-top" alt="filme1">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="padding-bottom: 20px;">
+                    <div class="card" widht="100%">
+                        <img id="banner" src="narcos banner.jpg" class="card-img-top" alt="filme1">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="padding-bottom: 20px;">
+                    <div class="card" widht="100%">
+                        <img id="banner" src="la casa de papel banner.jpg" class="card-img-top" alt="filme1">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="padding-bottom: 20px;">
+                    <div class="card" widht="100%">
+                        <img id="banner" src="runawaysr.jpg" class="card-img-top" alt="filme1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Botão para carregar mais filmes-->
+
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais filmes</button>
+                </div>
+            </div>
+        </div>
+
+        <!--AVALIAÇÕES-->
+        <section>
+            <div class="container">
+                <h2 style="padding-bottom: 20px;"><b>Últimas avaliações</b></h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3">
+                                    <div id="Leitor1">
+                                    <img class="Leitores" src="Leitor1.jpg" height="100%" width="100%" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-7 col-sm-8 col-md-9 col-lg-9">
+                                    <h4>Rodrigo Alves</h4>
+                                    <p>Estou curtindo demais os novos lançamentos, a plataforma tem atualizado sempre o catálogo e isso atrai os clientes. Estão todos de parabéns!!!</p>
+                                    <p><b>Avaliação:</b></p>
+                                    <p>★★★★★ - <b>11/02/2022</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3">
+                                    <div id="Leitor2">
+                                        <img class="Leitores" src="Leitor2.jpg" height="100%" width="100%" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
+                                    <h4>
+                                        José Ferreira
+                                    </h4>
+                                    <p>Eu gostei muito da experiência da plataforma, e indico a todos!</p>
+                                    <p><b>Avaliação:</b></p>
+                                    <p>★★★★★ - <b>12/03/2022</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3">
+                                    <div id="Leitor3">
+                                        <img class="Leitores" src="Leitor3.png" height="100%" width="100%" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
+                                    <h4>Guilherme Souza</h4>
+                                    <p>Ótimos reviews e sinopses. Vejo que a equipe tem trabalhado duro para manter a plataforma.</p>
+                                    <p><b>Avaliação:</b></p>
+                                    <p>★★★★☆ - <b> 12/04/2022</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="botao_avaliacoes">
+                <div class="row">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais avaliações</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Entrevistas e Making Off-->
+
+
+        <section class="entrevistas">
+            <div class="container">
+                <h1 style="padding-bottom:20px";><b>Entrevistas e MakingOff</b></h1>
+
+                <!--Videos das entrevistas-->
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-4" style="padding: 30px 0px 60px 10px">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lL9eiETLl3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4><b>Nome: </b>Sonic 2</h4>
+                        <p><b>Diretor: </b>Jeff Fowler<br>
+                        <b>Roteiro: </b>Josh Miller <b>Estreia: </b>2022</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-4" style="padding: 30px 0px 60px 10px">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6np_bwPfshg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4><b>Nome: </b>Doutor Estranho no Multiverso da Loucura</h4>
+                        <p><b>Diretor: </b> Sam Raimi <br>
+                        <b>Roteiro: </b>Stan Lee  <b>Estreia: </b>2022</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-4" style="padding: 30px 0px 60px 10px">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4AoRVNmBAkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h4><b>Nome: </b>WandaVision</h4>
+                        <p><b>Diretor: </b> Matt Shakman <br>
+                        <b>Roteiro: </b> Jack Kirby  <b>Estreia: </b>2021</p>
+                    </div>
+                </div>
+            </div>
+
+         <!--novidades-->
+
+        </section>                    
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                        <h1><b>Novidades</b></h1>
+                        <div class="row" id="imagem_novidade">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="imagem_novidade">
+                                <img src="noticias1.jpg" alt="" width="100%" height="100%" style="float: left;">
+                            </div>
+                            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-8">
+                                <h2>Morbius: Jared Leto é criticado por comportamento polêmico nos bastidores do filme da Marvel</h2>
+                                <p>Você se lembra quando em meados de 2016, durante as gravações de Esquadrão Suicida, Jared Leto ficou marcado por um comportamento incomum nos bastidores, supostamente, enviando para colegas de elenco presentes como ratos, preservativos e outras excentricidades? Pois bem, parece que a saga do ator, mais uma vez, está se repetindo, desta vez no set de Morbius.</p>
+                                <span class="badge rounded-pill bg-primary">hollywood</span>
+                                <span class="badge rounded-pill bg-primary">Oscar</span>
+                                <span class="badge rounded-pill bg-primary">Melhor Filme</span>
+                            </div>
+                        </div>
+                        
+                        <div class="row" id="imagem_novidade" style="border-top-style: solid; padding-top: 10px;">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="imagem_novidade">
+                                <img src="noticias_thor.jpg" alt="" width="100%" height="100%" style="float: left;">
+                            </div>
+                            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-8">
+                                <h2>Thor: Amor e Trovão’: O que é a criatura gigante que aparece no trailer? Confira!</h2>
+                                <p>Para quem não sabe, a criatura é chamada Falligar, o deus das fronteiras galácticas, considerado um bravo oponente que já lutou até mesmo contra buracos negros por pura diversão.<br>
+
+                                    Nos quadrinhos, a fera já dividiu batalhas com o deus do trovão e eles tornaram-se grandes amigos…<br>
+                                                                                                            
+                                <span class="badge rounded-pill bg-primary">hollywood</span>
+                                <span class="badge rounded-pill bg-primary">Oscar</span>
+                                <span class="badge rounded-pill bg-primary">Melhor Filme</span>
+                            </div>
+                        </div>
+
+                        <div class="row" id="imagem_novidade" style="border-top-style: solid; padding-top: 10px;">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="imagem_novidade">
+                                <img src="noticias_senhor_dos_aneis.jpg" alt="" width="100%" height="100%"">
+                            </div>
+                            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-8">
+                                <h2>‘O Senhor dos Anéis: Os Anéis de Poder’: Prime Video revela DOIS novos personagens da série; Confira!</h2>
+                                <p>‘O Senhor dos Anéis: Os Anéis de Poder’, série inspirada nos lendários romances de J.R.R. Tolkien, é uma das produções mais aguardadas do ano e promete fazer um enorme sucesso.<br>
+
+                                    Agora, para manter nossas expectativas lá em cima, o Prime Video divulgou mais duas imagens promocionais do show, revelando dois novos personagens: Theo, interpretado por Tyroe Muhafidin em seu primeiro grande papel na televisão; e Bronwyn, vivida por Nazanin Boniadi (‘How I Met Your Mother’).</p>
+                                    <span class="badge rounded-pill bg-primary">hollywood</span>
+                                    <span class="badge rounded-pill bg-primary">Oscar</span>
+                                    <span class="badge rounded-pill bg-primary">Melhor Filme</span>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                        <h1><b>Sobre</b></h1>
+                        <p>Somos a PureFlix, seu principal portal de filmes e séries. Nascemos em 2014 com a missão de levar o entreterimento as massas promovendo cultura, diversão e informação </p>
+
+                        <h1><b>Editorial</b></h1>
+
+                        <div class="editorial">
+                            <p><img style="padding-right: 5px;" id="icones_usuario" src="icone_usuario.png"><strong>Redação: </strong> Daniel Teles</p>
+                            <p><img style="padding-right: 5px;" id="icones_usuario" src="icone_usuario.png"><strong>Pesquisa: </strong> Daniel Teles</p>
+                            <p><img style="padding-right: 5px;" id="icones_usuario" src="icone_usuario.png"><strong>Gerente Geral: </strong> Daniel Teles</p>
+                        </div>
+    
+                        <div class="redesociais">
+                            <h3><b>Redes Sociais:</b></h3>
+                            <img id="icones" src="facebook-icones.png" alt=""> 
+                            <img id="icones" src="Twitter-icones.png" alt=""> 
+                            <img id="icones" src="instagram-icones.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section> 
+    </body>
+
+    <footer>
+        <div class="#">
+            <div class="row" id="footer">
+
+                <div class="col-9">
+                    <p style="font-size: 15px; padding-left: 30px;"> Copyright 2022 - Disciplina de Desenvolvimento de Interfaces Web - <b>ICEI PUC MINAS</b></p>
+                </div>
+
+                <div class="col-3">
+                    <img class="imagem_logo_final" style="float: right; padding-right: 10px;" src="Logo1.png"/>
+                </div>
+            </div>    
+        </div>
+    </footer>
+</html>
